@@ -10,4 +10,16 @@ body {
   font-weight: 400;
 }
 
+header {
+  height: 5.875rem;
+  width: 100%;
+  background-color: white;
+  border-bottom: 1px solid darkgray;
+  position: fixed;
+}
+
+main {
+  padding-top: 5.875rem;
+}
+
 /*# sourceMappingURL=style.css.map */

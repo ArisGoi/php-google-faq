@@ -1,3 +1,9 @@
+// Variables
+$header-height: 5.875rem;
+
+// var-colors
+$header-bg: white;
+
 /* Reset */
 * {
     margin: 0;
@@ -8,4 +14,16 @@
 body{
     font-family: 'Open Sans', sans-serif;
     font-weight: 400;
+}
+
+// HEADER
+header{
+    height: $header-height;
+    width: 100%;
+    background-color: $header-bg;
+    border-bottom: 1px solid darkgray;
+    position: fixed;
+}
+main{
+    padding-top: $header-height;
 }
