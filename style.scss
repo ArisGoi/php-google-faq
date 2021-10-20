@@ -3,6 +3,7 @@ $header-height: 5.875rem;
 
 // var-colors
 $header-bg: white;
+$links: rgb(51, 103, 214);
 
 /* Reset */
 * {
@@ -16,6 +17,12 @@ body{
     font-weight: 400;
 }
 
+// common
+.container{
+    max-width: 960px;
+    margin: auto;
+}
+
 // HEADER
 header{
     height: $header-height;
@@ -24,6 +31,24 @@ header{
     border-bottom: 1px solid darkgray;
     position: fixed;
 }
+
+// main
 main{
-    padding-top: $header-height;
+    padding-top: calc($header-height + 70px);
+}
+.faq{
+    margin-bottom: 85px;
+    a{
+        text-decoration: none;
+        color: $links;
+    }
+    h2{
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-size: 1.5625rem;
+    }
+    p{
+        font-weight: 400;
+        font-size: .9375rem;
+    }
 }
