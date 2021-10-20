@@ -18,9 +18,42 @@ body {
 header {
   height: 5.875rem;
   width: 100%;
+  padding: 15px 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   background-color: white;
   border-bottom: 1px solid darkgray;
   position: fixed;
+}
+header div {
+  display: flex;
+  align-items: center;
+}
+header div a {
+  color: #555;
+  text-decoration: none;
+  font-size: 1.275rem;
+  font-weight: 600;
+  margin-left: 10px;
+  margin-top: -5px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+nav a {
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #555;
+  padding: 5px 0;
+}
+nav a.current {
+  color: #3367d6;
+  border-bottom: 3px solid #3367d6;
 }
 
 main {

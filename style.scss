@@ -4,6 +4,7 @@ $header-height: 5.875rem;
 // var-colors
 $header-bg: white;
 $links: rgb(51, 103, 214);
+$text-mid-dark: #555;
 
 /* Reset */
 * {
@@ -27,9 +28,44 @@ body{
 header{
     height: $header-height;
     width: 100%;
+    padding: 15px 0 0 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     background-color: $header-bg;
     border-bottom: 1px solid darkgray;
     position: fixed;
+
+    div{
+        display: flex;
+        align-items: center;
+        a{
+            color: $text-mid-dark;
+            text-decoration: none;
+            font-size: 1.275rem;
+            font-weight: 600;
+            margin-left: 10px;
+            margin-top: -5px;
+        }
+    }
+}
+nav{
+    ul li{
+        list-style: none;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    a{
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.125rem;
+        color: $text-mid-dark;
+        padding: 5px 0;
+        &.current{
+            color: $links;
+            border-bottom: 3px solid $links;
+        }
+    }
 }
 
 // main
