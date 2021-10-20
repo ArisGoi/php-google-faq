@@ -39,9 +39,24 @@ main {
   font-weight: 600;
   font-size: 1.5625rem;
 }
+.faq h3 {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 1.29rem;
+  margin-bottom: 15px;
+}
 .faq p {
   font-weight: 400;
   font-size: 0.9375rem;
+}
+.faq ol li {
+  list-style-type: decimal;
+  list-style-position: inside;
+  margin: 15px 0;
+}
+.faq ol li ol li {
+  list-style-type: lower-alpha;
+  margin-left: 25px;
 }
 
 /*# sourceMappingURL=style.css.map */
